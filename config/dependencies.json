@@ -1,0 +1,55 @@
+{
+    "dependencies": [
+        {
+            "class": "ride\\library\\system\\file\\File",
+            "id": "manual",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "system.directory.manual"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "ride\\library\\manual\\Manual",
+            "id": "app",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "directory",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\system\\file\\File",
+                                "id": "manual"
+                            }
+                        },
+                        {
+                            "name": "fileBrowser",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\system\\file\\browser\\FileBrowser"
+                            }
+                        },
+                        {
+                            "name": "path",
+                            "type": "scalar",
+                            "properties": {
+                                "value": "manual"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

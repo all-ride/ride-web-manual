@@ -1,0 +1,48 @@
+{
+    "routes": [
+        {
+            "path": "/",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "indexAction",
+            "methods": ["HEAD", "GET"],
+            "id": "manual"
+        },
+        {
+            "path": "/page",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "pageAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "dynamic": true,
+            "id": "manual.page"
+        },
+        {
+            "path": "/page/add",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "formAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "id": "manual.page.add"
+        },
+        {
+            "path": "/page/edit",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "formAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "dynamic": true,
+            "id": "manual.page.edit"
+        },
+        {
+            "path": "/reference",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "referenceAction",
+            "methods": ["HEAD", "GET"],
+            "id": "manual.reference"
+        },
+        {
+            "path": "/search",
+            "controller": "ride\\web\\manual\\controller\\ManualController",
+            "action": "searchAction",
+            "methods": ["HEAD", "GET", "POST"],
+            "id": "manual.search"
+        }
+    ]
+}

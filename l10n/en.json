@@ -1,0 +1,8 @@
+{
+    "label.content": "Content",
+    "label.title": "Title",
+    "title.page.add": "Add A New Page",
+    "title.manual": "Manual",
+    "title.reference": "Reference",
+    "warning.manual.page.not.exist": "This page does not exist, create it by submitting the content through the form below."
+}
