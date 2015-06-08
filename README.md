@@ -6,11 +6,13 @@ To activate, add the routes from _config/routes.manual.json_ to your configurati
 
 For example, in _application/config/routes.json_, you can set:
 
-    {
-        "routes": [
-            {
-                "path": "/admin/documentation/manual",
-                "file": "config/routes.manual.json"
-            },
-        ]
-    }
+```json
+{
+    "routes": [
+        {
+            "path": "/admin/documentation/manual",
+            "file": "config/routes.manual.json"
+        },
+    ]
+}
+```
